@@ -8,9 +8,8 @@ use Symfony\Component\Routing\Annotation\Route;
 class VinylController
 {
     #[Route('/')]
-    public function homepage()
+    public function homepage(): Response
     {
-        die('Vinyl Def not fancy-looking frisbee!');
-        return new Response('PB and Jams');
+        return new Response('Title: PB and Jams');
     }
 }
